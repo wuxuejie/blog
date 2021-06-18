@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "gatsby develop",
-    "push": "gatsby build --prefix-paths && gh-pages -d public",
+    "push": "gatsby build --prefix-paths && xcopy D:\\workspaces\\github\\wuxuejie\\blog\\public D:\\workspaces\\github\\wuxuejie\\blog\\docs /s/y",
     "build": "gatsby build",
     "clean": "gatsby clean",
     "serve": "gatsby serve"

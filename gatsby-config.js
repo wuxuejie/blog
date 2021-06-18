@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/gatsbyjs',
+  pathPrefix: '/blog',
   siteMetadata: {
     siteUrl: `https://gatsby-theme-i18n-react-intl.netlify.app`,
     title: "gatsby-theme-i18n-react-intl",
