@@ -1,0 +1,14 @@
+{
+  "helloWorld": "你好",
+  "indexNote": "这是首页.",
+  "secondPageLink": "跳转到第二个页面",
+  "thirdPageLink": "跳转到第三个页面",
+  "indexPageLink": "跳转到第一个页面",
+  "secondPageGermanLink": "简体中文",
+  "indexPageEnglishLink": "English",
+  "overviewLang": "支持语言",
+  "thirdPage": "第三页面",
+  "thirdNote": "这是第三个页面",
+  "home": "首页",
+  "notFound": "页面不见了"
+}
