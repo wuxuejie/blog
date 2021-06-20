@@ -1,5 +1,4 @@
 import 'animate.css';
-import classNames from 'classnames';
 import * as React from "react";
 import face1 from '../../assets/face/face1.png';
 import face2 from '../../assets/face/face2.png';
@@ -69,56 +68,17 @@ const App = () => {
 	const left = list.filter((p, i) => i % 2 == 1);
 	const right = list.filter((p, i) => i % 2 == 0);
 	return (
-		<div id="team" style={{ paddingTop: '60px' }}>
+		<div id="news" style={{ paddingTop: '60px' }}>
 			<ScrollTrigger onEnter={onEnterViewport} onExit={onExitViewport}>
 				<div className={style.container}>
 					<div className={style.title}>
-						<div className={style.bgH1}>TEAM</div>
-						<span>团队</span>
+						<div className={style.bgH1}>NEWS</div>
+						<span>新闻</span>
 					</div>
-					<div className={style.team}>
-						<div className={style.left}>
-							{left.map(p => <div className={classNames([style.person], 'animate__animated', animate.person)}>
-								<div className={style.face}><img src={p.face} /></div>
-								<div className={style.body}>
-									<div className={style.header}>
-										<span className={style.name}>{p.name}</span>
-										<span className={style.position}>{p.position}</span>
-									</div>
-									<div className={style.desc}>{p.desc}</div>
-								</div>
-								<div className={style.hover}>
-									<div className={classNames([style.body])}>
-										<div className={style.header}>
-											<span className={style.name}>{p.name}</span>
-											<span className={style.position}>{p.position}</span>
-										</div>
-										<div className={style.desc}>{p.desc}</div>
-									</div>
-								</div>
-							</div>)}
-						</div>
-						<div className={style.right}>
-							{right.map(p => <div className={classNames([style.person], 'animate__animated', animate.person)}>
-								<div className={style.face}><img src={p.face} /></div>
-								<div className={style.body}>
-									<div className={classNames([style.header])}>
-										<span className={style.name}>{p.name}</span>
-										<span className={style.position}>{p.position}</span>
-									</div>
-									<div className={style.desc}>{p.desc}</div>
-								</div>
-								<div className={style.hover}>
-									<div className={classNames([style.body])}>
-										<div className={style.header}>
-											<span className={style.name}>{p.name}</span>
-											<span className={style.position}>{p.position}</span>
-										</div>
-										<div className={style.desc}>{p.desc}</div>
-									</div>
-								</div>
-							</div>)}
-						</div>
+					<div className={style.list}>
+						{list.map(p => <div className={style.item}>
+							<img src={p.face} />
+						</div>)}
 					</div>
 				</div>
 			</ScrollTrigger>

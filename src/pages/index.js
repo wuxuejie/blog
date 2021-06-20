@@ -4,8 +4,12 @@ import * as React from "react"
 import { useIntl } from "react-intl"
 import Banner from '../components/banner'
 import Enterprise from '../components/enterprise'
+import Footer from '../components/footer'
 import Layout from "../components/layout"
+import LinkResources from '../components/linkResources'
 import Nav from '../components/nav'
+import News from '../components/news'
+import Partner from '../components/partner'
 import Project from '../components/project'
 import Seo from "../components/seo"
 import Team from '../components/team'
@@ -15,12 +19,17 @@ const Index = ({ data }) => {
   const intl = useIntl()
   return (
     <Layout>
+      <div id="home"></div>
       <Seo title={intl.formatMessage({ id: "home" })} />
       <Nav />
       <Banner data={data.banners.nodes} />
       <Enterprise />
       <Project />
       <Team />
+      <LinkResources />
+      <Partner />
+      <News />
+      <Footer />
       <h1>{intl.formatMessage({ id: "helloWorld" })}</h1>
       <p>{intl.formatMessage({ id: "indexNote" })}</p>
       <p>

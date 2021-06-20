@@ -40,7 +40,7 @@ export default function App({ data }) {
 	}
 	preTop = scrollTop;
 	return (
-		<div ref={ref} style={{ position: 'relative' }}>
+		<div id="banner" ref={ref} style={{ position: 'relative' }}>
 			<Swiper
 				effect={'fade'}
 				spaceBetween={30}
