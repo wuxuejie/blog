@@ -10,5 +10,11 @@
   "thirdPage": "Third page",
   "thirdNote": "This is the third page",
   "home": "Home",
-  "notFound": "Page not found"
+  "notFound": "Page not found",
+  "nav.home": "HOME",
+  "nav.project": "PROJECT",
+  "nav.team": "TEAM",
+  "nav.news": "NEWS",
+  "nav.contact": "CONTACT",
+  "nav.lange": "English"
 }

@@ -1,24 +1,24 @@
 import { LocalizedLink } from "gatsby-theme-i18n"
 import * as React from "react"
-import { useIntl } from "react-intl"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { I } from "../utils/index"
 
 const Page3 = () => {
-  const intl = useIntl()
+  // const intl = useIntl()
   return (
     <Layout>
-      <Seo title={intl.formatMessage({ id: "thirdPage" })} />
-      <h1>{intl.formatMessage({ id: "thirdPage" })}</h1>
-      <p>{intl.formatMessage({ id: "thirdNote" })}</p>
+      <Seo title={I("thirdPage")} />
+      <h1>{I("thirdPage")}</h1>
+      <p>{I("thirdNote")}</p>
       <p>
-        <LocalizedLink to="./page-2/">
-          {intl.formatMessage({ id: "secondPageLink" })}
+        <LocalizedLink to="/page-2/">
+          {I("secondPageLink")}
         </LocalizedLink>
       </p>
       <p>
-        <LocalizedLink to="./">
-          {intl.formatMessage({ id: "indexPageLink" })}
+        <LocalizedLink to="/">
+          {I("indexPageLink")}
         </LocalizedLink>
       </p>
     </Layout>

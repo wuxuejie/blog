@@ -1,12 +1,20 @@
 module.exports = {
   pathPrefix: '/blog',
   siteMetadata: {
-    siteUrl: `https://gatsby-theme-i18n-react-intl.netlify.app`,
-    title: "gatsby-theme-i18n-react-intl",
-    description: `Default example for i18n with react-intl`,
-    author: `LekoArts`,
+    siteUrl: `https://wuxuejie.github.io/blog/`,
+    title: "标题",
+    description: `介绍`,
+    author: `wxj`,
   },
   plugins: [
+    'gatsby-plugin-less',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/assets/banners`,
+        name: `banners`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

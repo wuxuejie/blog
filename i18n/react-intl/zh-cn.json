@@ -10,5 +10,11 @@
   "thirdPage": "第三页面",
   "thirdNote": "这是第三个页面",
   "home": "首页",
-  "notFound": "页面不见了"
+  "notFound": "页面不见了",
+  "nav.home": "首页",
+  "nav.project": "项目",
+  "nav.team": "团队",
+  "nav.news": "新闻",
+  "nav.contact": "联系",
+  "nav.lange": "简体中文"
 }

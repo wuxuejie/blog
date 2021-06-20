@@ -1,0 +1,50 @@
+.header {
+  height: 0px;
+}
+
+.flex {
+  position: fixed;
+  width: 100%;
+  background-color: #000;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+
+    a {
+      background-color: #000;
+      color: #fff;
+      margin: 6px 15px;
+      text-decoration: none;
+
+    }
+
+    a:hover {
+      color: rgb(4, 130, 247);
+    }
+
+    .left {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      padding: 20px 10px;
+    }
+
+    .right {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+
+      padding: 20px 10px;
+    }
+  }
+
+}
